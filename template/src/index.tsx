@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import ConnectedIntlProvider from './Providers/ConnectedIntlProvider';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
+import store from './Redux/Store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ConnectedIntlProvider>
-      <App />
+    <ConnectedIntlProvider>      
+      <Provider store={store}>
+        <App />
+      </Provider>
     </ConnectedIntlProvider>
   </React.StrictMode>,
   document.getElementById('root')
