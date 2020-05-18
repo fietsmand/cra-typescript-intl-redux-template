@@ -1,0 +1,2 @@
+// i18n
+export const SWITCH_USER_LOCALE = 'SWITCH_USER_LOCALE';

@@ -1,0 +1,29 @@
+{
+    "extends": [
+        "plugin:mocha/recommended",
+        "airbnb-base"
+    ],
+    "plugins": [
+        "import",
+        "mocha"
+    ],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "node": true,
+        "mocha": true    
+    },
+    "rules": {
+        
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "moduleDirectory": [
+                    "node_modules",
+                    "src/"
+                ]
+            }
+        }
+    }
+}
